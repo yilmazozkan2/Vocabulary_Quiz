@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
     int deger = 0;
     Typeface fontum;
     LinearLayout panel;
-    String A = "A-) ";
-    String B = "B-) ";
     String countDownText;
     CountDownTimer gerisayim;
     ShredPref shredPref = new ShredPref();
@@ -219,10 +217,7 @@ public class MainActivity extends AppCompatActivity {
         int radioId = rgroup.getCheckedRadioButtonId();
         RadioButton radiobutton;
         radiobutton = (RadioButton) findViewById(radioId);
-        if (radiobutton.getText().toString().equals(A + bircok[randomItem])) {
-            dogru();
-            radiobutton.setBackgroundColor(Color.GREEN);
-        } else if (radiobutton.getText().toString().equals(B + bircok[randomItem])) {
+        if (radiobutton.getText().toString().equals(bircok[randomItem])) {
             dogru();
             radiobutton.setBackgroundColor(Color.GREEN);
         } else {
@@ -237,507 +232,506 @@ public class MainActivity extends AppCompatActivity {
         rbB.setBackgroundColor(Color.WHITE);
         randomItem = rnd.nextInt(bircok.length);
         if (bircok[randomItem].equals("Birçok")) {
-            rbA.setText(A + "Birçok");
-            rbB.setText(B + "Bir çok");
+            rbA.setText("Birçok");
+            rbB.setText("Bir çok");
 
         } else if (bircok[randomItem].equals("Yanlış")) {
-            rbA.setText(A + "Yanlış");
-            rbB.setText(B + "Yalnış");
+            rbA.setText("Yanlış");
+            rbB.setText("Yalnış");
 
         } else if (bircok[randomItem].equals("Orijinal")) {
-            rbA.setText(A + "Orijinal");
-            rbB.setText(B + "orjinal");
+            rbA.setText("Orijinal");
+            rbB.setText("orjinal");
 
         } else if (bircok[randomItem].equals("Kılavuz")) {
-            rbA.setText(A + "Kılavuz");
-            rbB.setText(B + "Klavuz");
+            rbA.setText("Kılavuz");
+            rbB.setText("Klavuz");
 
         } else if (bircok[randomItem].equals("Güneydoğu")) {
-            rbA.setText(A + "Güneydoğu");
-            rbB.setText(B + "Güney Doğu");
+            rbA.setText("Güneydoğu");
+            rbB.setText("Güney Doğu");
 
         } else if (bircok[randomItem].equals("Kirpik")) {
-            rbA.setText(A + "Kiprik");
-            rbB.setText(B + "Kirpik");
+            rbA.setText("Kiprik");
+            rbB.setText("Kirpik");
         } else if (bircok[randomItem].equals("Birdenbire")) {
-            rbA.setText(A + "Birden bire");
-            rbB.setText(B + "Birdenbire");
+            rbA.setText("Birden bire");
+            rbB.setText("Birdenbire");
 
 
         } else if (bircok[randomItem].equals("Pek çok")) {
-            rbA.setText(A + "Pek çok");
-            rbB.setText(B + "Pekçok");
+            rbA.setText("Pek çok");
+            rbB.setText("Pekçok");
 
         } else if (bircok[randomItem].equals("Emretmek")) {
-            rbA.setText(A + "Emir etmek");
-            rbB.setText(B + "Emretmek");
+            rbA.setText("Emir etmek");
+            rbB.setText("Emretmek");
 
 
         } else if (bircok[randomItem].equals("Terk etti")) {
-            rbA.setText(A + "Terketti");
-            rbB.setText(B + "Terk etti");
+            rbA.setText("Terketti");
+            rbB.setText("Terk etti");
 
 
         } else if (bircok[randomItem].equals("Günaydın")) {
-            rbA.setText(A + "Günaydın");
-            rbB.setText(B + "Gün aydın");
+            rbA.setText("Günaydın");
+            rbB.setText("Gün aydın");
 
 
         } else if (bircok[randomItem].equals("Dilbilimi")) {
-            rbA.setText(A + "Dilbilimi");
-            rbB.setText(B + "Dil bilimi");
+            rbA.setText("Dilbilimi");
+            rbB.setText("Dil bilimi");
 
 
         } else if (bircok[randomItem].equals("Yemekhane")) {
-            rbA.setText(A + "Yemekhane");
-            rbB.setText(B + "Yemek hane");
+            rbA.setText("Yemekhane");
+            rbB.setText("Yemek hane");
 
 
         } else if (bircok[randomItem].equals("Doğumevi")) {
-            rbA.setText(A + "Doğumevi");
-            rbB.setText(B + "Doğum evi");
+            rbA.setText("Doğumevi");
+            rbB.setText("Doğum evi");
 
         } else if (bircok[randomItem].equals("Çikolata")) {
-            rbA.setText(A + "Çukulata");
-            rbB.setText(B + "Çikolata");
+            rbA.setText("Çukulata");
+            rbB.setText("Çikolata");
 
 
         } else if (bircok[randomItem].equals("Kırmızıbiber")) {
-            rbA.setText(A + "Kırmızı biber");
-            rbB.setText(B + "Kırmızıbiber");
+            rbA.setText("Kırmızı biber");
+            rbB.setText("Kırmızıbiber");
 
 
         } else if (bircok[randomItem].equals("Açıkgöz")) {
-            rbA.setText(A + "Açıkgöz");
-            rbB.setText(B + "Açık göz");
+            rbA.setText("Açıkgöz");
+            rbB.setText("Açık göz");
 
 
         } else if (bircok[randomItem].equals("Grup")) {
-            rbA.setText(A + "Grup");
-            rbB.setText(B + "Gurup");
+            rbA.setText("Grup");
+            rbB.setText("Gurup");
         } else if (bircok[randomItem].equals("Vazgeçti")) {
 
-            rbA.setText(A + "Vazgeçti");
-            rbB.setText(B + "Vaz geçti");
+            rbA.setText( "Vazgeçti");
+            rbB.setText( "Vaz geçti");
 
         } else if (bircok[randomItem].equals("Hristiyan")) {
-            rbA.setText(A + "Hıristiyan");
-            rbB.setText(B + "Hristiyan");
+            rbA.setText( "Hıristiyan");
+            rbB.setText("Hristiyan");
 
         } else if (bircok[randomItem].equals("Anaokulu")) {
 
-            rbA.setText(A + "Ana okulu");
-            rbB.setText(B + "Anaokulu");
+            rbA.setText( "Ana okulu");
+            rbB.setText( "Anaokulu");
 
 
         } else if (bircok[randomItem].equals("Başsavcı")) {
-            rbA.setText(A + "Başsavcı");
-            rbB.setText(B + "Baş savcı");
+            rbA.setText( "Başsavcı");
+            rbB.setText("Baş savcı");
 
         } else if (bircok[randomItem].equals("Parşömen")) {
 
-            rbA.setText(A + "Parşömen");
-            rbB.setText(B + "Parşümen");
+            rbA.setText( "Parşömen");
+            rbB.setText( "Parşümen");
 
 
         } else if (bircok[randomItem].equals("Makine")) {
 
-            rbA.setText(A + "Makine");
-            rbB.setText(B + "Makina");
+            rbA.setText("Makine");
+            rbB.setText( "Makina");
 
 
         } else if (bircok[randomItem].equals("Egzoz")) {
-
-            rbA.setText(A + "Egsoz");
-            rbB.setText(B + "Egzoz");
+            rbA.setText("Egsoz");
+            rbB.setText("Egzoz");
 
 
         } else if (bircok[randomItem].equals("Atölye")) {
 
-            rbA.setText(A + "Atelye");
-            rbB.setText(B + "Atölye");
+            rbA.setText( "Atelye");
+            rbB.setText( "Atölye");
 
 
         } else if (bircok[randomItem].equals("Hafriyat")) {
 
-            rbA.setText(A + "Hafriyat");
-            rbB.setText(B + "Harfiyat");
+            rbA.setText( "Hafriyat");
+            rbB.setText( "Harfiyat");
 
 
         } else if (bircok[randomItem].equals("Şofben")) {
 
-            rbA.setText(A + "Şofben");
-            rbB.setText(B + "Şohben");
+            rbA.setText( "Şofben");
+            rbB.setText( "Şohben");
 
 
         } else if (bircok[randomItem].equals("Ateş böceği")) {
 
-            rbA.setText(A + "Ateşböceği");
-            rbB.setText(B + "Ateş böceği");
+            rbA.setText( "Ateşböceği");
+            rbB.setText( "Ateş böceği");
 
 
         } else if (bircok[randomItem].equals("Yüzükoyun")) {
 
-            rbA.setText(A + "Yüzü Koyun");
-            rbB.setText(B + "Yüzükoyun");
+            rbA.setText( "Yüzü Koyun");
+            rbB.setText( "Yüzükoyun");
 
 
         } else if (bircok[randomItem].equals("Köpek Balığı")) {
 
-            rbA.setText(A + "Köpek Balığı");
-            rbB.setText(B + "Köpekbalığı");
+            rbA.setText( "Köpek Balığı");
+            rbB.setText( "Köpekbalığı");
 
 
         } else if (bircok[randomItem].equals("Hafta sonu")) {
 
-            rbA.setText(A + "Hafta sonu");
-            rbB.setText(B + "Haftasonu");
+            rbA.setText("Hafta sonu");
+            rbB.setText("Haftasonu");
 
 
         } else if (bircok[randomItem].equals("Kuru yemiş")) {
 
-            rbA.setText(A + "Kuruyemiş");
-            rbB.setText(B + "Kuru yemiş");
+            rbA.setText("Kuruyemiş");
+            rbB.setText("Kuru yemiş");
 
 
         } else if (bircok[randomItem].equals("Oysaki")) {
 
-            rbA.setText(A + "Oysa ki");
-            rbB.setText(B + "Oysaki");
+            rbA.setText("Oysa ki");
+            rbB.setText("Oysaki");
 
 
         } else if (bircok[randomItem].equals("Her gün")) {
 
-            rbA.setText(A + "Her gün");
-            rbB.setText(B + "Hergün");
+            rbA.setText("Her gün");
+            rbB.setText("Hergün");
 
 
         } else if (bircok[randomItem].equals("Herkes")) {
 
-            rbA.setText(A + "Herkes");
-            rbB.setText(B + "Herkez");
+            rbA.setText( "Herkes");
+            rbB.setText("Herkez");
 
 
         } else if (bircok[randomItem].equals("Art arda")) {
 
-            rbA.setText(A + "Art arda");
-            rbB.setText(B + "Artarda");
+            rbA.setText( "Art arda");
+            rbB.setText("Artarda");
 
 
         } else if (bircok[randomItem].equals("Tıraş")) {
 
-            rbA.setText(A + "Tıraş");
-            rbB.setText(B + "Traş");
+            rbA.setText( "Tıraş");
+            rbB.setText("Traş");
 
 
         } else if (bircok[randomItem].equals("Herhangi")) {
 
-            rbA.setText(A + "Herhangi");
-            rbB.setText(B + "Her hangi");
+            rbA.setText("Herhangi");
+            rbB.setText( "Her hangi");
 
 
         } else if (bircok[randomItem].equals("Kibrit")) {
 
-            rbA.setText(A + "Kirbit");
-            rbB.setText(B + "Kibrit");
+            rbA.setText("Kirbit");
+            rbB.setText("Kibrit");
 
 
         } else if (bircok[randomItem].equals("Affedersiniz")) {
 
-            rbA.setText(A + "Af edersiniz");
-            rbB.setText(B + "Affedersiniz");
+            rbA.setText( "Af edersiniz");
+            rbB.setText( "Affedersiniz");
 
 
         } else if (bircok[randomItem].equals("Hiçbir şey")) {
 
-            rbA.setText(A + "Hiçbir şey");
-            rbB.setText(B + "Hiçbirşey");
+            rbA.setText( "Hiçbir şey");
+            rbB.setText("Hiçbirşey");
 
 
         } else if (bircok[randomItem].equals("Dershane")) {
 
-            rbA.setText(A + "Dershane");
-            rbB.setText(B + "Dersane");
+            rbA.setText("Dershane");
+            rbB.setText("Dersane");
 
 
         } else if (bircok[randomItem].equals("Ateşkes")) {
 
-            rbA.setText(A + "Ateş kes");
-            rbB.setText(B + "Ateşkes");
+            rbA.setText("Ateş kes");
+            rbB.setText("Ateşkes");
 
 
         } else if (bircok[randomItem].equals("Laboratuvar")) {
 
-            rbA.setText(A + "Laboratuar");
-            rbB.setText(B + "Laboratuvar");
+            rbA.setText( "Laboratuar");
+            rbB.setText( "Laboratuvar");
 
 
         } else if (bircok[randomItem].equals("Travma")) {
 
-            rbA.setText(A + "Travma");
-            rbB.setText(B + "Tıravma");
+            rbA.setText( "Travma");
+            rbB.setText("Tıravma");
 
 
         } else if (bircok[randomItem].equals("Babaanne")) {
 
-            rbA.setText(A + "Baba anne");
-            rbB.setText(B + "Babaanne");
+            rbA.setText( "Baba anne");
+            rbB.setText("Babaanne");
 
 
         } else if (bircok[randomItem].equals("Uluslararası")) {
 
-            rbA.setText(A + "Uluslararası");
-            rbB.setText(B + "Uluslar arası");
+            rbA.setText("Uluslararası");
+            rbB.setText( "Uluslar arası");
 
 
         } else if (bircok[randomItem].equals("Alaca karanlık")) {
 
-            rbA.setText(A + "Alaca karanlık");
-            rbB.setText(B + "Alacakaranlık");
+            rbA.setText("Alaca karanlık");
+            rbB.setText("Alacakaranlık");
 
 
         } else if (bircok[randomItem].equals("Kilitledi")) {
 
-            rbA.setText(A + "Kitledi");
-            rbB.setText(B + "Kilitledi");
+            rbA.setText("Kitledi");
+            rbB.setText("Kilitledi");
 
 
         } else if (bircok[randomItem].equals("Sürpriz")) {
 
-            rbA.setText(A + "Süpriz");
-            rbB.setText(B + "Sürpriz");
+            rbA.setText( "Süpriz");
+            rbB.setText("Sürpriz");
 
 
         } else if (bircok[randomItem].equals("Kravat")) {
 
-            rbA.setText(A + "Kravat");
-            rbB.setText(B + "Kıravat");
+            rbA.setText("Kravat");
+            rbB.setText( "Kıravat");
 
 
         } else if (bircok[randomItem].equals("Fark etmek")) {
 
-            rbA.setText(A + "Farketmek");
-            rbB.setText(B + "Fark etmek");
+            rbA.setText("Farketmek");
+            rbB.setText("Fark etmek");
 
 
         } else if (bircok[randomItem].equals("Şarj")) {
 
-            rbA.setText(A + "Şarj");
-            rbB.setText(B + "Şarz");
+            rbA.setText("Şarj");
+            rbB.setText("Şarz");
 
 
         } else if (bircok[randomItem].equals("Aslan")) {
 
-            rbA.setText(A + "Aslan");
-            rbB.setText(B + "Arslan");
+            rbA.setText("Aslan");
+            rbB.setText("Arslan");
 
         } else if (bircok[randomItem].equals("Her şey")) {
 
-            rbA.setText(A + "Herşey");
-            rbB.setText(B + "Her şey");
+            rbA.setText("Herşey");
+            rbB.setText("Her şey");
 
 
         } else if (bircok[randomItem].equals("Birtakım")) {
 
-            rbA.setText(A + "Bir takım");
-            rbB.setText(B + "Birtakım");
+            rbA.setText("Bir takım");
+            rbB.setText("Birtakım");
 
 
         } else if (bircok[randomItem].equals("Çeyiz")) {
 
-            rbA.setText(A + "Çeyiz");
-            rbB.setText(B + "Ceyiz");
+            rbA.setText("Çeyiz");
+            rbB.setText("Ceyiz");
 
 
         } else if (bircok[randomItem].equals("Halbuki")) {
 
-            rbA.setText(A + "Halbuki");
-            rbB.setText(B + "Halbu ki");
+            rbA.setText("Halbuki");
+            rbB.setText("Halbu ki");
 
         } else if (bircok[randomItem].equals("Zarafet")) {
 
-            rbA.setText(A + "Zerafet");
-            rbB.setText(B + "Zarafet");
+            rbA.setText("Zerafet");
+            rbB.setText("Zarafet");
 
         } else if (bircok[randomItem].equals("Dinozor")) {
 
-            rbA.setText(A + "Dinazor");
-            rbB.setText(B + "Dinozor");
+            rbA.setText("Dinazor");
+            rbB.setText("Dinozor");
 
         } else if (bircok[randomItem].equals("Şefkat")) {
 
-            rbA.setText(A + "Şefkat");
-            rbB.setText(B + "Şevkat");
+            rbA.setText("Şefkat");
+            rbB.setText("Şevkat");
 
         } else if (bircok[randomItem].equals("Unvan")) {
 
-            rbA.setText(A + "Ünvan");
-            rbB.setText(B + "Unvan");
+            rbA.setText("Ünvan");
+            rbB.setText("Unvan");
 
         } else if (bircok[randomItem].equals("Gözyaşı")) {
 
-            rbA.setText(A + "Göz yaşı");
-            rbB.setText(B + "Gözyaşı");
+            rbA.setText("Göz yaşı");
+            rbB.setText("Gözyaşı");
 
         } else if (bircok[randomItem].equals("gidişgeliş")) {
 
-            rbA.setText(A + "gidişgeliş");
-            rbB.setText(B + "gidiş geliş");
+            rbA.setText("gidişgeliş");
+            rbB.setText("gidiş geliş");
 
         } else if (bircok[randomItem].equals("çokbilmiş")) {
 
-            rbA.setText(A + "çok bilmiş");
-            rbB.setText(B + "çokbilmiş");
+            rbA.setText("çok bilmiş");
+            rbB.setText("çokbilmiş");
 
         } else if (bircok[randomItem].equals("fark etmek")) {
 
-            rbA.setText(A + "farketmek");
-            rbB.setText(B + "fark etmek");
+            rbA.setText("farketmek");
+            rbB.setText("fark etmek");
 
         } else if (bircok[randomItem].equals("bu günlerde")) {
 
-            rbA.setText(A + "bu günlerde");
-            rbB.setText(B + "bugünlerde");
+            rbA.setText("bu günlerde");
+            rbB.setText("bugünlerde");
 
         } else if (bircok[randomItem].equals("bir şeyler")) {
 
-            rbA.setText(A + "birşeyler");
-            rbB.setText(B + "bir şeyler");
+            rbA.setText("birşeyler");
+            rbB.setText("bir şeyler");
 
 
         } else if (bircok[randomItem].equals("bir şeye")) {
 
-            rbA.setText(A + "bir şeye");
-            rbB.setText(B + "birşeye");
+            rbA.setText("bir şeye");
+            rbB.setText("birşeye");
 
 
         } else if (bircok[randomItem].equals("ben de kullanıyorum")) {
 
-            rbA.setText(A + "bende kullanıyorum");
-            rbB.setText(B + "ben de kullanıyorum");
+            rbA.setText("bende kullanıyorum");
+            rbB.setText("ben de kullanıyorum");
 
         } else if (bircok[randomItem].equals("baş etmek")) {
 
-            rbA.setText(A + "başetmek");
-            rbB.setText(B + "baş etmek");
+            rbA.setText("başetmek");
+            rbB.setText("baş etmek");
 
         } else if (bircok[randomItem].equals("az çok")) {
 
-            rbA.setText(A + "az çok");
-            rbB.setText(B + "azçok");
+            rbA.setText("az çok");
+            rbB.setText("azçok");
 
 
         } else if (bircok[randomItem].equals("ayrım")) {
 
-            rbA.setText(A + "ayrım");
-            rbB.setText(B + "ayırım");
+            rbA.setText("ayrım");
+            rbB.setText("ayırım");
 
 
         } else if (bircok[randomItem].equals("artırmak")) {
 
-            rbA.setText(A + "artırmak");
-            rbB.setText(B + "arttırmak");
+            rbA.setText("artırmak");
+            rbB.setText("arttırmak");
 
 
         } else if (bircok[randomItem].equals("arkadaştan")) {
 
-            rbA.setText(A + "arkadaştan");
-            rbB.setText(B + "arkadaşdan");
+            rbA.setText("arkadaştan");
+            rbB.setText("arkadaşdan");
 
         } else if (bircok[randomItem].equals("Arapçası")) {
 
-            rbA.setText(A + "Arapça'sı");
-            rbB.setText(B + "Arapçası");
+            rbA.setText("Arapça'sı");
+            rbB.setText("Arapçası");
 
         } else if (bircok[randomItem].equals("Allah aşkına")) {
 
-            rbA.setText(A + "Allahaşkına");
-            rbB.setText(B + "Allah aşkına");
+            rbA.setText("Allahaşkına");
+            rbB.setText("Allah aşkına");
 
         } else if (bircok[randomItem].equals("hâlâ")) {
 
-            rbA.setText(A + "hâlâ");
-            rbB.setText(B + "hala");
+            rbA.setText("hâlâ");
+            rbB.setText("hala");
 
         } else if (bircok[randomItem].equals("hammadde")) {
 
-            rbA.setText(A + "ham madde");
-            rbB.setText(B + "hammadde");
+            rbA.setText("ham madde");
+            rbB.setText("hammadde");
 
         } else if (bircok[randomItem].equals("her gün")) {
 
-            rbA.setText(A + "her gün");
-            rbB.setText(B + "hergün");
+            rbA.setText("her gün");
+            rbB.setText("hergün");
 
         } else if (bircok[randomItem].equals("hukukun")) {
 
-            rbA.setText(A + "hukukun");
-            rbB.setText(B + "hukuğun");
+            rbA.setText("hukukun");
+            rbB.setText("hukuğun");
 
         } else if (bircok[randomItem].equals("İngilizcenin")) {
 
-            rbA.setText(A + "İngilizce'nin");
-            rbB.setText(B + "İngilizcenin");
+            rbA.setText("İngilizce'nin");
+            rbB.setText("İngilizcenin");
 
         } else if (bircok[randomItem].equals("işyeri")) {
 
-            rbA.setText(A + "işyeri");
-            rbB.setText(B + "iş yeri");
+            rbA.setText("işyeri");
+            rbB.setText("iş yeri");
 
         } else if (bircok[randomItem].equals("Lise 1'de bize öğretilen")) {
 
-            rbA.setText(A + "Lise 1 de bize öğretilen");
-            rbB.setText(B + "Lise 1'de bize öğretilen");
+            rbA.setText("Lise 1 de bize öğretilen");
+            rbB.setText("Lise 1'de bize öğretilen");
 
         } else if (bircok[randomItem].equals("maşallah")) {
 
-            rbA.setText(A + "maaşallah");
-            rbB.setText(B + "maşallah");
+            rbA.setText("maaşallah");
+            rbB.setText("maşallah");
 
         } else if (bircok[randomItem].equals("mademki")) {
 
-            rbA.setText(A + "mademki");
-            rbB.setText(B + "madem ki");
+            rbA.setText("mademki");
+            rbB.setText("madem ki");
 
         } else if (bircok[randomItem].equals("maalesef")) {
 
-            rbA.setText(A + "maalesef");
-            rbB.setText(B + "malesef");
+            rbA.setText("maalesef");
+            rbB.setText("malesef");
 
         } else if (bircok[randomItem].equals("olup da")) {
 
-            rbA.setText(A + "olup ta");
-            rbB.setText(B + "olup da");
+            rbA.setText("olup ta");
+            rbB.setText("olup da");
 
         } else if (bircok[randomItem].equals("övünç")) {
 
-            rbA.setText(A + "öğünç");
-            rbB.setText(B + "övünç");
+            rbA.setText("öğünç");
+            rbB.setText("övünç");
 
         } else if (bircok[randomItem].equals("rastgele")) {
 
-            rbA.setText(A + "rastgele");
-            rbB.setText(B + "rasgele");
+            rbA.setText("rastgele");
+            rbB.setText("rasgele");
 
         } else if (bircok[randomItem].equals("tabii")) {
 
-            rbA.setText(A + "tabii");
-            rbB.setText(B + "tabi");
+            rbA.setText("tabii");
+            rbB.setText("tabi");
 
         } else if (bircok[randomItem].equals("tetanos")) {
 
-            rbA.setText(A + "tetenoz");
-            rbB.setText(B + "tetanos");
+            rbA.setText("tetenoz");
+            rbB.setText("tetanos");
 
         } else if (bircok[randomItem].equals("ya da")) {
 
-            rbA.setText(A + "ya da");
-            rbB.setText(B + "yada");
+            rbA.setText("ya da");
+            rbB.setText("yada");
 
         } else if (bircok[randomItem].equals("zıddı")) {
 
-            rbA.setText(A + "zıtı");
-            rbB.setText(B + "zıddı");
+            rbA.setText("zıtı");
+            rbB.setText("zıddı");
 
         }
     }
